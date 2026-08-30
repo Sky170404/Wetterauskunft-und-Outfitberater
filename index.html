@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "de">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">#
+        <title> Wetterauskunft und Outfit Berater</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h1>🌤️ Wetterauskunft und Outfit Berater</h1>
+
+            <div class="theme-toggle-wrapper">
+                <label class="theme-toggle">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+        </label>
+        <span id="themeLabel">🌙 Dark Mode</span>
+    </div>
+
+            <p class="subtitle">Wähle die angemessene Kleidung basierend am aktuellen Wetter 😄</p>
+
+         <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Gib deine gewünschte Stadt ein">
+            <button onclick="getWeatherByCity()">🔍 Suchen</button>
+         </div>
+
+         <button onclick="getWeatherByLocation()" class="location-btn">
+            📍 Meinen Standort verwenden
+         </button>
+
+         <div id="weatherDisplay" class="weather-display">
+
+         </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
